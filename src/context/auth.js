@@ -86,8 +86,7 @@ export const AuthProvider = ({ children }) => {
 
         await AsyncStorage.multiSet([
           ["token", userExists.token], 
-          ["userType", userExists.userType],
-          ["initialRouteName", routename]
+          ["userType", userExists.userType]
         ]);
 
         return routename;
